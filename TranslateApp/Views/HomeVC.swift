@@ -31,11 +31,12 @@ class HomeVC: BaseViewControllor {
         // Do any additional setup after loading the view.
         initView()
         bindData()
-        bannerView.adUnitID = "ca-app-pub-3933534186672942~6225976316"
+        bannerView.adUnitID = "ca-app-pub-3940256099942544/2934735716"
         bannerView.rootViewController = self
         let request: GADRequest = GADRequest()
         bannerView.load(request)
     }
+    
     
     func bindData(){
         vm.languageSource.subscribe(onNext: { (_) in
